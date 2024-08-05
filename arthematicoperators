@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    int sum,sub,mul,division,modulus;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    sum = num1 + num2;
+    printf("%d + %d = %d\n", num1, num2, sum);
+
+    sub = num1 - num2;
+    printf("%d - %d = %d\n", num1, num2, sub);
+
+    mul = num1 * num2;
+    printf("%d * %d = %d\n", num1, num2, mul);
+
+    if (num2 != 0) {
+        division = num1 / num2;
+        printf("%d / %d = %d\n", num1, num2, division);
+
+        modulus = num1 % num2;
+        printf("%d %% %d = %d\n", num1, num2, modulus);
+    } else {
+        printf("Division by zero is not allowed.\n");
+    }
+
+    return 0;
+}
